@@ -26,7 +26,7 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Record build action
         uses: launchableinc/record-build-action@v1.0.0
         with:
