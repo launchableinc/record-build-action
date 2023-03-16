@@ -30,7 +30,7 @@ jobs:
       - name: Record build action
         uses: launchableinc/record-build-action@v1.0.0
         with:
-          build_name: 
+          build_name: $GITHUB_RUN_ID
       - name: Test
         run: <YOUR TEST COMMAND HERE>
 ```
@@ -45,7 +45,7 @@ Refer to [go-test example](./.github/workflows/go-test-example.yaml) for example
 
 ### `build_name`
 
-[Build](https://docs.launchableinc.com/concepts/build) name that you can give to the current software. Default is the [GITHUB_RUN_ID](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) revealed by GitHub Actions.
+[Build](https://docs.launchableinc.com/concepts/build) name that you can give to the current software.
 
 You'll use this value when you record tests later, so the value you choose needs to be available in that later step.
 
