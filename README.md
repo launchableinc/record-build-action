@@ -45,9 +45,8 @@ Refer to [go-test example](./.github/workflows/go-test-example.yaml) for example
 
 ### `build_name`
 
-[Build](https://docs.launchableinc.com/concepts/build) name that you can give to the current software.
-
-You'll use this value when you record tests later, so the value you choose needs to be available in that later step.
+[Build](https://docs.launchableinc.com/concepts/build) name that you can give to the current software. You'll use this value when you record tests later, so the value you choose needs to be available in that later step. See [Choosing a value for \<BUILD NAME>
+](https://www.launchableinc.com/docs/sending-data-to-launchable/using-the-launchable-cli/recording-builds-with-the-launchable-cli/choosing-a-value-for-build-name/).
 
 ## Optional
 
@@ -68,4 +67,4 @@ Flag to stop collecting build information from Git Submodules. Default `false`, 
 Python version for the Launchable CLI to use. Default is `3.10`. Change this if your workflow requires a specific Python version.
 
 # License
-Launchable data collection action is licensed under [Apache license](./LICENSE).
+Launchable data collection actions are licensed under the [Apache license](./LICENSE).
