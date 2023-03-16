@@ -2,7 +2,7 @@
 
 # Usage
 
-By default, we suggest using the record build and test results action.
+By default, we suggest using the [record build and test results action](https://github.com/marketplace/actions/record-build-and-test-results-action).
 
 However if your code repository/repositories is/are not available in the step where you run tests, you can split up the two steps (record build and record tests).
 
