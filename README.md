@@ -8,6 +8,17 @@ However if your code repository/repositories is/are not available in the step wh
 
 Use this action to record a build, then use the [Launchable record tests to build action](https://github.com/marketplace/actions/record-test-results-to-build-action) to record tests.
 
+## Usage with `actions/checkout`
+
+If you use `actions/checkout`, set fetch-depth: 0 as shown in the example below. Without this setting, Launchable will not receive information about all your commits.
+
+```yaml
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+```
+
 ## Example
 
 Refer to [go-test example](./.github/workflows/go-test-example.yaml) for example use of the action.
